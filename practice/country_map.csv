@@ -1,0 +1,198 @@
+geo,name,four_regions,eight_regions,six_regions,members_oecd_g77,Latitude,Longitude,UN member since,World bank region,"World bank, 4 income groups 2017","World bank, 3 income groups 2017",UNHCR
+aus,Australia,asia,east_asia_pacific,east_asia_pacific,oecd,-25,135,1/11/1945,East Asia & Pacific,High income,High income,Asia and the Pacific
+brn,Brunei,asia,east_asia_pacific,east_asia_pacific,g77,4.5,114.66667,21/9/1984,East Asia & Pacific,High income,High income,Asia and the Pacific
+khm,Cambodia,asia,east_asia_pacific,east_asia_pacific,g77,13,105,14/12/1955,East Asia & Pacific,Lower middle income,Middle income,Asia and the Pacific
+chn,China,asia,east_asia_pacific,east_asia_pacific,g77,35,105,24/10/1945,East Asia & Pacific,Upper middle income,Middle income,Asia and the Pacific
+fji,Fiji,asia,east_asia_pacific,east_asia_pacific,g77,-18,178,13/10/1970,East Asia & Pacific,Upper middle income,Middle income,Asia and the Pacific
+hkg,"Hong Kong, China",asia,east_asia_pacific,east_asia_pacific,others,22.28552,114.15769,,East Asia & Pacific,High income,High income,Asia and the Pacific
+idn,Indonesia,asia,east_asia_pacific,east_asia_pacific,g77,-5,120,28/9/1950,East Asia & Pacific,Lower middle income,Middle income,Asia and the Pacific
+jpn,Japan,asia,east_asia_pacific,east_asia_pacific,oecd,35.68536,139.75309,18/12/1956,East Asia & Pacific,High income,High income,Asia and the Pacific
+kir,Kiribati,asia,east_asia_pacific,east_asia_pacific,others,1.421,172.984,14/9/1999,East Asia & Pacific,Lower middle income,Middle income,Asia and the Pacific
+prk,North Korea,asia,east_asia_pacific,east_asia_pacific,g77,40,127,17/9/1991,East Asia & Pacific,Low income,Low income,Asia and the Pacific
+kor,South Korea,asia,east_asia_pacific,east_asia_pacific,oecd,36.5,127.75,17/9/1991,East Asia & Pacific,High income,High income,Asia and the Pacific
+lao,Lao,asia,east_asia_pacific,east_asia_pacific,g77,18,105,14/12/1955,East Asia & Pacific,Lower middle income,Middle income,Asia and the Pacific
+mys,Malaysia,asia,east_asia_pacific,east_asia_pacific,g77,2.5,112.5,17/9/1957,East Asia & Pacific,Upper middle income,Middle income,Asia and the Pacific
+mhl,Marshall Islands,asia,east_asia_pacific,east_asia_pacific,g77,7.113,171.236,17/9/1991,East Asia & Pacific,Upper middle income,Middle income,Asia and the Pacific
+fsm,"Micronesia, Fed. Sts.",asia,east_asia_pacific,east_asia_pacific,g77,6.924,158.162,17/9/1991,East Asia & Pacific,Lower middle income,Middle income,Asia and the Pacific
+mng,Mongolia,asia,east_asia_pacific,east_asia_pacific,g77,46,105,27/10/1961,East Asia & Pacific,Lower middle income,Middle income,Asia and the Pacific
+mmr,Myanmar,asia,east_asia_pacific,east_asia_pacific,g77,21,96,19/4/1948,East Asia & Pacific,Lower middle income,Middle income,Asia and the Pacific
+nru,Nauru,asia,east_asia_pacific,east_asia_pacific,others,-0.517,166.933,14/9/1999,East Asia & Pacific,Upper middle income,Middle income,Asia and the Pacific
+nzl,New Zealand,asia,east_asia_pacific,east_asia_pacific,oecd,-42,174,24/10/1945,East Asia & Pacific,High income,High income,Asia and the Pacific
+plw,Palau,asia,east_asia_pacific,east_asia_pacific,others,7.503,134.621,15/12/1994,East Asia & Pacific,High income,High income,Asia and the Pacific
+png,Papua New Guinea,asia,east_asia_pacific,east_asia_pacific,g77,-6,147,10/10/1975,East Asia & Pacific,Lower middle income,Middle income,Asia and the Pacific
+phl,Philippines,asia,east_asia_pacific,east_asia_pacific,g77,13,122,24/10/1945,East Asia & Pacific,Lower middle income,Middle income,Asia and the Pacific
+wsm,Samoa,asia,east_asia_pacific,east_asia_pacific,g77,-13.8,-172.13333,15/12/1976,East Asia & Pacific,Upper middle income,Middle income,Asia and the Pacific
+sgp,Singapore,asia,east_asia_pacific,east_asia_pacific,g77,1.28967,103.85007,21/9/1965,East Asia & Pacific,High income,High income,Asia and the Pacific
+slb,Solomon Islands,asia,east_asia_pacific,east_asia_pacific,g77,-8,159,19/9/1978,East Asia & Pacific,Lower middle income,Middle income,Asia and the Pacific
+twn,Taiwan,asia,east_asia_pacific,east_asia_pacific,others,24,121,,East Asia & Pacific,High income,High income,
+tha,Thailand,asia,east_asia_pacific,east_asia_pacific,g77,15.5,101,16/12/1946,East Asia & Pacific,Upper middle income,Middle income,Asia and the Pacific
+tls,Timor-Leste,asia,east_asia_pacific,east_asia_pacific,g77,-8.83333,125.75,27/9/2002,East Asia & Pacific,Lower middle income,Middle income,Asia and the Pacific
+ton,Tonga,asia,east_asia_pacific,east_asia_pacific,g77,-20,-175,14/9/1999,East Asia & Pacific,Upper middle income,Middle income,Asia and the Pacific
+tuv,Tuvalu,asia,east_asia_pacific,east_asia_pacific,others,-8.51719,179.14478,5/9/2000,East Asia & Pacific,Upper middle income,Middle income,Asia and the Pacific
+vut,Vanuatu,asia,east_asia_pacific,east_asia_pacific,g77,-16,167,15/9/1981,East Asia & Pacific,Lower middle income,Middle income,Asia and the Pacific
+vnm,Vietnam,asia,east_asia_pacific,east_asia_pacific,g77,16.16667,107.83333,20/9/1977,East Asia & Pacific,Lower middle income,Middle income,Asia and the Pacific
+alb,Albania,europe,europe_east,europe_central_asia,others,41,20,14/12/1955,Europe & Central Asia,Upper middle income,Middle income,Europe
+and,Andorra,europe,europe_west,europe_central_asia,others,42.50779,1.52109,28/7/1993,Europe & Central Asia,High income,High income,Europe
+arm,Armenia,europe,europe_east,europe_central_asia,others,40.25,45,2/3/1992,Europe & Central Asia,Lower middle income,Middle income,Europe
+aut,Austria,europe,europe_west,europe_central_asia,oecd,47.33333,13.33333,14/12/1955,Europe & Central Asia,High income,High income,Europe
+aze,Azerbaijan,europe,europe_east,europe_central_asia,others,40.5,47.5,2/3/1992,Europe & Central Asia,Upper middle income,Middle income,Europe
+blr,Belarus,europe,europe_east,europe_central_asia,others,53,28,24/10/1945,Europe & Central Asia,Upper middle income,Middle income,Europe
+bel,Belgium,europe,europe_west,europe_central_asia,oecd,50.75,4.5,27/12/1945,Europe & Central Asia,High income,High income,Europe
+bih,Bosnia and Herzegovina,europe,europe_east,europe_central_asia,g77,44.25,17.83333,22/5/1992,Europe & Central Asia,Upper middle income,Middle income,Europe
+bgr,Bulgaria,europe,europe_east,europe_central_asia,others,42.66667,25.25,14/12/1955,Europe & Central Asia,Upper middle income,Middle income,Europe
+hrv,Croatia,europe,europe_east,europe_central_asia,others,45.16667,15.5,22/5/1992,Europe & Central Asia,Upper middle income,Middle income,Europe
+cyp,Cyprus,europe,europe_west,europe_central_asia,others,35,33,20/9/1960,Europe & Central Asia,High income,High income,Europe
+cze,Czech Republic,europe,europe_east,europe_central_asia,oecd,49.75,15,19/1/1993,Europe & Central Asia,High income,High income,Europe
+dnk,Denmark,europe,europe_west,europe_central_asia,oecd,56,10,24/10/1945,Europe & Central Asia,High income,High income,Europe
+est,Estonia,europe,europe_east,europe_central_asia,others,59,26,17/9/1991,Europe & Central Asia,High income,High income,Europe
+fin,Finland,europe,europe_east,europe_central_asia,oecd,64,26,14/12/1955,Europe & Central Asia,High income,High income,Europe
+fra,France,europe,europe_west,europe_central_asia,oecd,46,2,24/10/1945,Europe & Central Asia,High income,High income,Europe
+geo,Georgia,europe,europe_east,europe_central_asia,others,41.99998,43.4999,31/7/1992,Europe & Central Asia,Lower middle income,Middle income,Europe
+deu,Germany,europe,europe_west,europe_central_asia,oecd,51.5,10.5,18/9/1973,Europe & Central Asia,High income,High income,Europe
+grc,Greece,europe,europe_west,europe_central_asia,oecd,39,22,25/10/1945,Europe & Central Asia,High income,High income,Europe
+hun,Hungary,europe,europe_east,europe_central_asia,oecd,47,20,14/12/1955,Europe & Central Asia,High income,High income,Europe
+isl,Iceland,europe,europe_west,europe_central_asia,oecd,65,-18,19/11/1946,Europe & Central Asia,High income,High income,Europe
+irl,Ireland,europe,europe_west,europe_central_asia,oecd,53,-8,14/12/1955,Europe & Central Asia,High income,High income,Europe
+ita,Italy,europe,europe_west,europe_central_asia,oecd,42.83333,12.83333,14/12/1955,Europe & Central Asia,High income,High income,Europe
+kaz,Kazakhstan,asia,asia_west,europe_central_asia,others,48,68,2/3/1992,Europe & Central Asia,Upper middle income,Middle income,Asia and the Pacific
+kgz,Kyrgyz Republic,asia,asia_west,europe_central_asia,others,41.5,75,2/3/1992,Europe & Central Asia,Lower middle income,Middle income,Asia and the Pacific
+lva,Latvia,europe,europe_east,europe_central_asia,others,57,25,17/9/1991,Europe & Central Asia,High income,High income,Europe
+lie,Liechtenstein,europe,europe_west,europe_central_asia,others,47.16667,9.53333,18/9/1990,Europe & Central Asia,High income,High income,Europe
+ltu,Lithuania,europe,europe_east,europe_central_asia,others,55.41667,24,17/9/1991,Europe & Central Asia,High income,High income,Europe
+lux,Luxembourg,europe,europe_west,europe_central_asia,oecd,49.61167,6.13,24/10/1945,Europe & Central Asia,High income,High income,Europe
+mkd,"Macedonia, FYR",europe,europe_east,europe_central_asia,others,41.66667,21.75,8/4/1993,Europe & Central Asia,Upper middle income,Middle income,Europe
+mda,Moldova,europe,europe_east,europe_central_asia,others,47.25,28.58333,2/3/1992,Europe & Central Asia,Lower middle income,Middle income,Europe
+mco,Monaco,europe,europe_west,europe_central_asia,others,43.73333,7.41667,28/5/1993,Europe & Central Asia,High income,High income,Europe
+mne,Montenegro,europe,europe_east,europe_central_asia,others,42.75,19.25,28/6/2006,Europe & Central Asia,Upper middle income,Middle income,Europe
+nld,Netherlands,europe,europe_west,europe_central_asia,oecd,52.25,5.75,10/12/1945,Europe & Central Asia,High income,High income,Europe
+nor,Norway,europe,europe_west,europe_central_asia,oecd,62,10,27/11/1945,Europe & Central Asia,High income,High income,Europe
+pol,Poland,europe,europe_west,europe_central_asia,oecd,52,20,24/10/1945,Europe & Central Asia,High income,High income,Europe
+prt,Portugal,europe,europe_west,europe_central_asia,oecd,39.6945,-8.13057,14/12/1955,Europe & Central Asia,High income,High income,Europe
+rou,Romania,europe,europe_east,europe_central_asia,others,46,25,14/12/1955,Europe & Central Asia,Upper middle income,Middle income,Europe
+rus,Russia,europe,europe_east,europe_central_asia,others,60,100,24/10/1945,Europe & Central Asia,Upper middle income,Middle income,Europe
+smr,San Marino,europe,europe_west,europe_central_asia,others,43.93667,12.44639,2/3/1992,Europe & Central Asia,High income,High income,Europe
+srb,Serbia,europe,europe_east,europe_central_asia,others,44.81892,20.45998,1/11/2000,Europe & Central Asia,Upper middle income,Middle income,Europe
+svk,Slovak Republic,europe,europe_east,europe_central_asia,oecd,48.66667,19.5,19/1/1993,Europe & Central Asia,High income,High income,Europe
+svn,Slovenia,europe,europe_east,europe_central_asia,others,46.08333,15,22/5/1992,Europe & Central Asia,High income,High income,Europe
+esp,Spain,europe,europe_west,europe_central_asia,oecd,40,-4,14/12/1955,Europe & Central Asia,High income,High income,Europe
+swe,Sweden,europe,europe_west,europe_central_asia,oecd,62,15,19/11/1946,Europe & Central Asia,High income,High income,Europe
+che,Switzerland,europe,europe_west,europe_central_asia,oecd,47.00016,8.01427,10/9/2002,Europe & Central Asia,High income,High income,Europe
+tjk,Tajikistan,asia,asia_west,europe_central_asia,others,39,71,2/3/1992,Europe & Central Asia,Lower middle income,Middle income,Asia and the Pacific
+tur,Turkey,europe,europe_east,europe_central_asia,oecd,39,35,24/10/1945,Europe & Central Asia,Upper middle income,Middle income,Europe
+tkm,Turkmenistan,asia,asia_west,europe_central_asia,g77,39.75,59.66667,2/3/1992,Europe & Central Asia,Upper middle income,Middle income,Asia and the Pacific
+ukr,Ukraine,europe,europe_east,europe_central_asia,others,49,32,24/10/1945,Europe & Central Asia,Lower middle income,Middle income,Europe
+gbr,United Kingdom,europe,europe_west,europe_central_asia,oecd,54.75844,-2.69531,24/10/1945,Europe & Central Asia,High income,High income,Europe
+uzb,Uzbekistan,asia,asia_west,europe_central_asia,others,41.66667,63.83333,2/3/1992,Europe & Central Asia,Lower middle income,Middle income,Asia and the Pacific
+atg,Antigua and Barbuda,americas,america_north,america,g77,17.05,-61.8,11/11/1981,Latin America & Caribbean,High income,High income,Americas
+arg,Argentina,americas,america_south,america,g77,-34,-64,24/10/1945,Latin America & Caribbean,Upper middle income,Middle income,Americas
+bhs,Bahamas,americas,america_north,america,g77,25.04082,-77.37122,18/8/1973,Latin America & Caribbean,High income,High income,Americas
+brb,Barbados,americas,america_north,america,g77,13.16667,-59.53333,9/12/1966,Latin America & Caribbean,High income,High income,Americas
+blz,Belize,americas,america_north,america,g77,17.49952,-88.19756,25/9/1981,Latin America & Caribbean,Upper middle income,Middle income,Americas
+bol,Bolivia,americas,america_south,america,g77,-17,-65,14/11/1945,Latin America & Caribbean,Lower middle income,Middle income,Americas
+bra,Brazil,americas,america_south,america,g77,-10,-55,24/10/1945,Latin America & Caribbean,Upper middle income,Middle income,Americas
+chl,Chile,americas,america_south,america,g77,-33.45694,-70.64827,24/10/1945,Latin America & Caribbean,High income,High income,Americas
+col,Colombia,americas,america_south,america,g77,4,-73.25,5/11/1945,Latin America & Caribbean,Upper middle income,Middle income,Americas
+cri,Costa Rica,americas,america_north,america,g77,10,-84,2/11/1945,Latin America & Caribbean,Upper middle income,Middle income,Americas
+cub,Cuba,americas,america_north,america,g77,22,-79.5,24/10/1945,Latin America & Caribbean,Upper middle income,Middle income,Americas
+dma,Dominica,americas,america_north,america,g77,15.5,-61.33333,18/12/1978,Latin America & Caribbean,Upper middle income,Middle income,Americas
+dom,Dominican Republic,americas,america_north,america,g77,19,-70.66667,24/10/1945,Latin America & Caribbean,Upper middle income,Middle income,Americas
+ecu,Ecuador,americas,america_south,america,g77,-1.25,-78.25,21/12/1945,Latin America & Caribbean,Upper middle income,Middle income,Americas
+slv,El Salvador,americas,america_north,america,g77,13.83333,-88.91667,24/10/1945,Latin America & Caribbean,Lower middle income,Middle income,Americas
+grd,Grenada,americas,america_north,america,g77,12.11667,-61.66667,17/9/1974,Latin America & Caribbean,Upper middle income,Middle income,Americas
+gtm,Guatemala,americas,america_north,america,g77,14.64072,-90.51327,21/11/1945,Latin America & Caribbean,Lower middle income,Middle income,Americas
+guy,Guyana,americas,america_south,america,g77,5,-59,20/9/1966,Latin America & Caribbean,Upper middle income,Middle income,Americas
+hti,Haiti,americas,america_north,america,g77,19,-72.41667,24/10/1945,Latin America & Caribbean,Low income,Low income,Americas
+hnd,Honduras,americas,america_north,america,g77,15,-86.5,17/12/1945,Latin America & Caribbean,Lower middle income,Middle income,Americas
+jam,Jamaica,americas,america_north,america,g77,18.16667,-77.25,18/9/1962,Latin America & Caribbean,Upper middle income,Middle income,Americas
+mex,Mexico,americas,america_north,america,oecd,19.42847,-99.12766,7/11/1945,Latin America & Caribbean,Upper middle income,Middle income,Americas
+nic,Nicaragua,americas,america_north,america,g77,13,-85,24/10/1945,Latin America & Caribbean,Lower middle income,Middle income,Americas
+pan,Panama,americas,america_north,america,g77,8.9936,-79.51973,13/11/1945,Latin America & Caribbean,Upper middle income,Middle income,Americas
+pry,Paraguay,americas,america_south,america,g77,-23.33333,-58,24/10/1945,Latin America & Caribbean,Upper middle income,Middle income,Americas
+per,Peru,americas,america_south,america,g77,-10,-75.25,31/10/1945,Latin America & Caribbean,Upper middle income,Middle income,Americas
+kna,St. Kitts and Nevis,americas,america_north,america,g77,17.33333,-62.75,23/9/1983,Latin America & Caribbean,High income,High income,Americas
+lca,St. Lucia,americas,america_north,america,g77,13.88333,-60.96667,18/9/1979,Latin America & Caribbean,Upper middle income,Middle income,Americas
+vct,St. Vincent and the Grenadines,americas,america_north,america,g77,13.08333,-61.2,16/9/1980,Latin America & Caribbean,Upper middle income,Middle income,Americas
+sur,Suriname,americas,america_south,america,g77,4,-56,4/12/1975,Latin America & Caribbean,Upper middle income,Middle income,Americas
+tto,Trinidad and Tobago,americas,america_north,america,g77,11,-61,18/9/1962,Latin America & Caribbean,High income,High income,Americas
+ury,Uruguay,americas,america_south,america,g77,-33,-56,18/12/1945,Latin America & Caribbean,High income,High income,Americas
+ven,Venezuela,americas,america_south,america,g77,8,-66,15/11/1945,Latin America & Caribbean,Upper middle income,Middle income,Americas
+dza,Algeria,africa,africa_north,middle_east_north_africa,g77,28,3,8/10/1962,Middle East & North Africa,Upper middle income,Middle income,Middle East and North Africa
+bhr,Bahrain,asia,asia_west,middle_east_north_africa,g77,26.03333,50.55,21/9/1971,Middle East & North Africa,High income,High income,Middle East and North Africa
+dji,Djibouti,africa,africa_north,middle_east_north_africa,g77,11.58901,43.14503,20/9/1977,Middle East & North Africa,Lower middle income,Middle income,"East and Horn of Africa, and Great Lakes"
+egy,Egypt,africa,africa_north,middle_east_north_africa,g77,27,30,24/10/1945,Middle East & North Africa,Lower middle income,Middle income,Middle East and North Africa
+irn,Iran,asia,asia_west,middle_east_north_africa,g77,32,53,24/10/1945,Middle East & North Africa,Upper middle income,Middle income,Asia and the Pacific
+irq,Iraq,asia,asia_west,middle_east_north_africa,g77,33,44,21/12/1945,Middle East & North Africa,Upper middle income,Middle income,Middle East and North Africa
+isr,Israel,asia,asia_west,middle_east_north_africa,others,31.5,34.75,11/5/1949,Middle East & North Africa,High income,High income,Middle East and North Africa
+jor,Jordan,asia,asia_west,middle_east_north_africa,g77,31,36,14/12/1955,Middle East & North Africa,Lower middle income,Middle income,Middle East and North Africa
+kwt,Kuwait,asia,asia_west,middle_east_north_africa,g77,29.36972,47.97833,14/5/1963,Middle East & North Africa,High income,High income,Middle East and North Africa
+lbn,Lebanon,asia,asia_west,middle_east_north_africa,g77,33.83333,35.83333,24/10/1945,Middle East & North Africa,Upper middle income,Middle income,Middle East and North Africa
+lby,Libya,africa,africa_north,middle_east_north_africa,g77,28,17,14/12/1955,Middle East & North Africa,Upper middle income,Middle income,Middle East and North Africa
+mlt,Malta,europe,europe_west,europe_central_asia,others,35.91667,14.43333,1/12/1964,Middle East & North Africa,High income,High income,Europe
+mar,Morocco,africa,africa_north,middle_east_north_africa,g77,32,-6,12/11/1956,Middle East & North Africa,Lower middle income,Middle income,Middle East and North Africa
+omn,Oman,asia,asia_west,middle_east_north_africa,g77,21,57,7/10/1971,Middle East & North Africa,High income,High income,Middle East and North Africa
+qat,Qatar,asia,asia_west,middle_east_north_africa,g77,25.27932,51.52245,21/9/1971,Middle East & North Africa,High income,High income,Middle East and North Africa
+sau,Saudi Arabia,asia,asia_west,middle_east_north_africa,g77,25,45,24/10/1945,Middle East & North Africa,High income,High income,Middle East and North Africa
+syr,Syria,asia,asia_west,middle_east_north_africa,g77,35,38,24/10/1945,Middle East & North Africa,Lower middle income,Middle income,Middle East and North Africa
+tun,Tunisia,africa,africa_north,middle_east_north_africa,g77,34,9,12/11/1956,Middle East & North Africa,Lower middle income,Middle income,Middle East and North Africa
+are,United Arab Emirates,asia,asia_west,middle_east_north_africa,g77,23.75,54.5,9/12/1971,Middle East & North Africa,High income,High income,Middle East and North Africa
+pse,Palestine,asia,asia_west,middle_east_north_africa,g77,31.92157,35.20329,,Middle East & North Africa,Lower middle income,Middle income,Middle East and North Africa
+yem,Yemen,asia,asia_west,middle_east_north_africa,g77,15.5,47.5,30/9/1947,Middle East & North Africa,Lower middle income,Middle income,Middle East and North Africa
+can,Canada,americas,america_north,america,oecd,60.10867,-113.64258,9/11/1945,North America,High income,High income,Americas
+usa,United States,americas,america_north,america,oecd,39.76,-98.5,24/10/1945,North America,High income,High income,Americas
+afg,Afghanistan,asia,asia_west,south_asia,g77,33,66,19/11/1946,South Asia,Low income,Low income,Asia and the Pacific
+bgd,Bangladesh,asia,asia_west,south_asia,g77,24,90,17/9/1974,South Asia,Lower middle income,Middle income,Asia and the Pacific
+btn,Bhutan,asia,asia_west,south_asia,g77,27.5,90.5,21/9/1971,South Asia,Lower middle income,Middle income,Asia and the Pacific
+ind,India,asia,asia_west,south_asia,g77,22,79,30/10/1945,South Asia,Lower middle income,Middle income,Asia and the Pacific
+mdv,Maldives,asia,asia_west,south_asia,g77,3.2,73,21/9/1965,South Asia,Upper middle income,Middle income,Asia and the Pacific
+npl,Nepal,asia,asia_west,south_asia,g77,28,84,14/12/1955,South Asia,Low income,Low income,Asia and the Pacific
+pak,Pakistan,asia,asia_west,south_asia,g77,30,70,30/9/1947,South Asia,Lower middle income,Middle income,Asia and the Pacific
+lka,Sri Lanka,asia,asia_west,south_asia,g77,7.75,80.75,14/12/1955,South Asia,Lower middle income,Middle income,Asia and the Pacific
+ago,Angola,africa,africa_sub_saharan,sub_saharan_africa,g77,-12.5,18.5,1/12/1976,Sub-Saharan Africa,Lower middle income,Middle income,Southern Africa
+ben,Benin,africa,africa_sub_saharan,sub_saharan_africa,g77,9.5,2.25,20/9/1960,Sub-Saharan Africa,Low income,Low income,West and Central Africa
+bwa,Botswana,africa,africa_sub_saharan,sub_saharan_africa,g77,-22,24,17/10/1966,Sub-Saharan Africa,Upper middle income,Middle income,Southern Africa
+bfa,Burkina Faso,africa,africa_sub_saharan,sub_saharan_africa,g77,12.5,-1.66667,20/9/1960,Sub-Saharan Africa,Low income,Low income,West and Central Africa
+bdi,Burundi,africa,africa_sub_saharan,sub_saharan_africa,g77,-3.5,30,18/9/1962,Sub-Saharan Africa,Low income,Low income,"East and Horn of Africa, and Great Lakes"
+cmr,Cameroon,africa,africa_sub_saharan,sub_saharan_africa,g77,6,12.5,20/9/1960,Sub-Saharan Africa,Lower middle income,Middle income,West and Central Africa
+cpv,Cape Verde,africa,africa_sub_saharan,sub_saharan_africa,g77,16,-24,16/9/1975,Sub-Saharan Africa,Lower middle income,Middle income,West and Central Africa
+caf,Central African Republic,africa,africa_sub_saharan,sub_saharan_africa,g77,7,21,20/9/1960,Sub-Saharan Africa,Low income,Low income,West and Central Africa
+tcd,Chad,africa,africa_sub_saharan,sub_saharan_africa,g77,15,19,20/9/1960,Sub-Saharan Africa,Low income,Low income,West and Central Africa
+com,Comoros,africa,africa_sub_saharan,sub_saharan_africa,g77,-12.23333,44.44553,12/11/1975,Sub-Saharan Africa,Low income,Low income,Southern Africa
+cod,"Congo, Dem. Rep.",africa,africa_sub_saharan,sub_saharan_africa,g77,-2.5,23.5,20/9/1960,Sub-Saharan Africa,Low income,Low income,Southern Africa
+cog,"Congo, Rep.",africa,africa_sub_saharan,sub_saharan_africa,g77,-1,15.5,20/9/1960,Sub-Saharan Africa,Lower middle income,Middle income,Southern Africa
+civ,Cote d'Ivoire,africa,africa_sub_saharan,sub_saharan_africa,g77,8,-5.5,20/9/1960,Sub-Saharan Africa,Lower middle income,Middle income,West and Central Africa
+gnq,Equatorial Guinea,africa,africa_sub_saharan,sub_saharan_africa,g77,1.7,10.5,12/11/1968,Sub-Saharan Africa,Upper middle income,Middle income,West and Central Africa
+eri,Eritrea,africa,africa_sub_saharan,sub_saharan_africa,g77,15,39,28/5/1993,Sub-Saharan Africa,Low income,Low income,"East and Horn of Africa, and Great Lakes"
+eth,Ethiopia,africa,africa_sub_saharan,sub_saharan_africa,g77,9,39.5,13/11/1945,Sub-Saharan Africa,Low income,Low income,"East and Horn of Africa, and Great Lakes"
+gab,Gabon,africa,africa_sub_saharan,sub_saharan_africa,g77,-1,11.75,20/9/1960,Sub-Saharan Africa,Upper middle income,Middle income,West and Central Africa
+gmb,Gambia,africa,africa_sub_saharan,sub_saharan_africa,g77,13.5,-15.5,21/9/1965,Sub-Saharan Africa,Low income,Low income,West and Central Africa
+gha,Ghana,africa,africa_sub_saharan,sub_saharan_africa,g77,8.1,-1.2,8/3/1957,Sub-Saharan Africa,Lower middle income,Middle income,West and Central Africa
+gin,Guinea,africa,africa_sub_saharan,sub_saharan_africa,g77,10.83333,-10.66667,12/12/1958,Sub-Saharan Africa,Low income,Low income,West and Central Africa
+gnb,Guinea-Bissau,africa,africa_sub_saharan,sub_saharan_africa,g77,12,-15,17/9/1974,Sub-Saharan Africa,Low income,Low income,West and Central Africa
+ken,Kenya,africa,africa_sub_saharan,sub_saharan_africa,g77,1,38,16/12/1963,Sub-Saharan Africa,Lower middle income,Middle income,"East and Horn of Africa, and Great Lakes"
+lso,Lesotho,africa,africa_sub_saharan,sub_saharan_africa,g77,-29.5,28.25,17/10/1966,Sub-Saharan Africa,Lower middle income,Middle income,Southern Africa
+lbr,Liberia,africa,africa_sub_saharan,sub_saharan_africa,g77,6.5,-9.5,2/11/1945,Sub-Saharan Africa,Low income,Low income,West and Central Africa
+mdg,Madagascar,africa,africa_sub_saharan,sub_saharan_africa,g77,-20,47,20/9/1960,Sub-Saharan Africa,Low income,Low income,Southern Africa
+mwi,Malawi,africa,africa_sub_saharan,sub_saharan_africa,g77,-13.5,34,1/12/1964,Sub-Saharan Africa,Low income,Low income,Southern Africa
+mli,Mali,africa,africa_sub_saharan,sub_saharan_africa,g77,18,-2,28/9/1960,Sub-Saharan Africa,Low income,Low income,West and Central Africa
+mrt,Mauritania,africa,africa_sub_saharan,sub_saharan_africa,g77,20.25,-10.5,27/10/1961,Sub-Saharan Africa,Lower middle income,Middle income,Middle East and North Africa
+mus,Mauritius,africa,africa_sub_saharan,sub_saharan_africa,g77,-20.3,57.58333,24/4/1968,Sub-Saharan Africa,Upper middle income,Middle income,Southern Africa
+moz,Mozambique,africa,africa_sub_saharan,sub_saharan_africa,g77,-18.25,35,16/9/1975,Sub-Saharan Africa,Low income,Low income,Southern Africa
+nam,Namibia,africa,africa_sub_saharan,sub_saharan_africa,g77,-22,17,23/4/1990,Sub-Saharan Africa,Upper middle income,Middle income,Southern Africa
+ner,Niger,africa,africa_sub_saharan,sub_saharan_africa,g77,18,9,20/9/1960,Sub-Saharan Africa,Low income,Low income,West and Central Africa
+nga,Nigeria,africa,africa_sub_saharan,sub_saharan_africa,g77,10,8,7/10/1960,Sub-Saharan Africa,Lower middle income,Middle income,West and Central Africa
+rwa,Rwanda,africa,africa_sub_saharan,sub_saharan_africa,g77,-2,30,18/9/1962,Sub-Saharan Africa,Low income,Low income,"East and Horn of Africa, and Great Lakes"
+stp,Sao Tome and Principe,africa,africa_sub_saharan,sub_saharan_africa,g77,1,7,16/9/1975,Sub-Saharan Africa,Lower middle income,Middle income,West and Central Africa
+sen,Senegal,africa,africa_sub_saharan,sub_saharan_africa,g77,14.5,-14.25,28/9/1960,Sub-Saharan Africa,Low income,Low income,West and Central Africa
+syc,Seychelles,africa,africa_sub_saharan,sub_saharan_africa,g77,-4.58333,55.66667,21/9/1976,Sub-Saharan Africa,High income,High income,Southern Africa
+sle,Sierra Leone,africa,africa_sub_saharan,sub_saharan_africa,g77,8.5,-11.5,27/9/1961,Sub-Saharan Africa,Low income,Low income,West and Central Africa
+som,Somalia,africa,africa_sub_saharan,sub_saharan_africa,g77,6,48,20/9/1960,Sub-Saharan Africa,Low income,Low income,"East and Horn of Africa, and Great Lakes"
+zaf,South Africa,africa,africa_sub_saharan,sub_saharan_africa,g77,-29,24,7/11/1945,Sub-Saharan Africa,Upper middle income,Middle income,Southern Africa
+sdn,Sudan,africa,africa_sub_saharan,sub_saharan_africa,g77,16,30,12/11/1956,Sub-Saharan Africa,Lower middle income,Middle income,"East and Horn of Africa, and Great Lakes"
+swz,Swaziland,africa,africa_sub_saharan,sub_saharan_africa,g77,-26.5,31.5,24/9/1968,Sub-Saharan Africa,Lower middle income,Middle income,Southern Africa
+tza,Tanzania,africa,africa_sub_saharan,sub_saharan_africa,g77,-6,35,14/12/1961,Sub-Saharan Africa,Low income,Low income,"East and Horn of Africa, and Great Lakes"
+tgo,Togo,africa,africa_sub_saharan,sub_saharan_africa,g77,8.66667,1.08333,20/9/1960,Sub-Saharan Africa,Low income,Low income,West and Central Africa
+uga,Uganda,africa,africa_sub_saharan,sub_saharan_africa,g77,1.25,32.5,25/10/1962,Sub-Saharan Africa,Low income,Low income,"East and Horn of Africa, and Great Lakes"
+zmb,Zambia,africa,africa_sub_saharan,sub_saharan_africa,g77,-14.33333,28.5,1/12/1964,Sub-Saharan Africa,Lower middle income,Middle income,Southern Africa
+zwe,Zimbabwe,africa,africa_sub_saharan,sub_saharan_africa,g77,-19,29.75,25/8/1980,Sub-Saharan Africa,Low income,Low income,Southern Africa
+ssd,South Sudan,africa,africa_sub_saharan,sub_saharan_africa,,7.5,30,14/7/2011,Sub-Saharan Africa,Low income,Low income,"East and Horn of Africa, and Great Lakes"
+hos,Holy See,europe,europe_west,europe_central_asia,others,41.90236,12.45332,,,,,Europe
