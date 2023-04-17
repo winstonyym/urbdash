@@ -3,16 +3,11 @@ import dash
 from dash import dcc, html, callback
 import dash_deck 
 import pydeck
-import scipy
-import scipy.stats as stats
 import plotly.graph_objects as go
 import plotly.figure_factory as ff
 import geopandas as gpd
 import pandas as pd
-import numpy as np
 from dash.dependencies import ClientsideFunction, Input, Output, State
-import plotly.express as px
-from ipywidgets import widgets
 import json
 
 mapbox_token = "pk.eyJ1Ijoid2luc3Rvbnl5bSIsImEiOiJjbDZyb3UwanQwOXNrM2pxOWRvNTJ2YmRlIn0.i2i24ARrX48r-tK1tX-yrQ"
@@ -28,7 +23,7 @@ with open("./data/poly_columns.json", "r") as f:
 with open("./data/GUN.json", "r") as f:
     links = json.load(f)
 
-datasets = {k.split('_')[0]:gpd.read_file(v) for k, v in links.items() if 'subzone' in k}
+datasets = {k.split('_')[0]:v for k, v in links.items() if 'subzone' in k}
 
 # Get dataframe
 cities_df = pd.read_csv("./data/cities_location.csv")
@@ -103,7 +98,11 @@ selected_location_layout = html.Div(
                                         value="No. of Nodes",
                                         clearable=False)
                                 ], style = {'width':'50%', 'display':'inline-block'}),
-                        dcc.Graph(id='scatter-graph', style = {'height':'73.5%'})
+                        dcc.Graph(id='scatter-graph', 
+                                  figure = {'data': [], 'layout': go.Layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', 
+                                                                                                xaxis = {'zeroline':True, 'showgrid':False},
+                                                                                                yaxis = {'zeroline':True, 'showgrid':False})}, 
+                                  style = {'height':'73.5%'})
                     ],
                     className="plots_container_child",
                 ),
@@ -159,7 +158,7 @@ app.layout = html.Div(
     [
         dcc.Location(id="url", refresh=False),
         html.Div(
-            [   dcc.Store(id='datasets', data={name: df.to_json() for name, df in datasets.items()}, storage_type='memory'),
+            [   dcc.Store(id='datasets', data={name: df_link for name, df_link in datasets.items()}, storage_type='session'),
                 html.Div(
                     id="width", style={"display": "none"}
                 ),  # Just to retrieve the width of the window
@@ -228,7 +227,7 @@ x_close_selection_clicks = 1
 def update_scatter(clickData, xaxis_col, yaxis_col, attr_datasets):
     global selected_location
     if clickData is None:
-        raise dash.exceptions.PreventUpdate
+        raise dash.exceptions.PreventUpdate  
     elif selected_location != "":
         df = gpd.read_file(attr_datasets[selected_location])
     return  {'data': [go.Scatter(x = df[xaxis_col], 
@@ -341,7 +340,7 @@ def update_graph_location(clickData,
         )
         tooltip_str = f"<b>{'{'}{'index'}{'}'}:</b> {'{'}{dims_selected}{'}'}"
         return (dash_deck.DeckGL(
-                    r.to_json(),
+                    json.loads(r.to_json()),
                     id="subzone-chart",
                     tooltip={'html': tooltip_str,
                              "style": {"backgroundColor": "white", "color": "black"}
@@ -507,4 +506,4 @@ app.clientside_callback(
 server = app.server
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run_server()
