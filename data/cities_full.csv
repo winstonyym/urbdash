@@ -1,0 +1,52 @@
+City,Country,Region,Lat,Long
+Singapore, Singapore, Southeast Asia, 1.361362, 103.813341
+Bangkok, Thailand, Southeast Asia, 13.7445783, 100.5221124
+Paris, France, Europe, 48.8589466, 2.2769953
+Seattle, USA, North America, 47.6131746, -122.4821476
+Chicago, USA, North America, 41.8339037, -87.8720478
+Sapporo, Japan, Asia, 42.9849944, 140.9677893
+Taipei, Taiwan, Asia, 25.0855388,121.4791004
+Mexico, Mexico, North America, 19.3909832,-99.3084213
+Tokyo, Japan, Asia, 35.687552, 139.765700
+Denver, USA, North America, 39.723530, -104.962793
+Antwerp, Belgium, Europe, 51.223137, 4.413008
+Barcelona, Spain, Europe, 41.401438, 2.161297
+Amsterdam, Netherlands, Europe, 52.374438, 4.897164
+Zagreb, Croatia, Europe, 45.824998, 15.978040
+Toronto, Canada, North America, 43.721233, -79.387341
+Adelaide, Australia, Oceania, -34.911632, 138.596190
+Madrid, Spain, Europe, 40.433617, -3.685227
+Athens, Greece, Europe, 37.986810, 23.729460
+Berlin, Germany, Europe, 52.521689, 13.402964
+Milan, Italy, Europe, 45.466677, 9.186229
+Hanoi, Vietnam, Southeast Asia, 21.030918, 105.836401
+Glasgow, Scotland, Europe, 55.863663, -4.252233
+Edinburgh, Scotland, Europe, 55.952070, -3.191101
+Bogota, Colombia, South America, 4.707887, -74.072707
+San Jose, Costa Rica, South America, 9.9311733,-84.0998
+Budapest, Hungary, Europe, 47.499434, 19.049154
+Yokohama, Japan, Asia, 35.458747, 139.581027
+Manila, Philippines, Southeast Asia, 14.601136, 120.983207
+Zurich, Switerland, Europe, 47.377731, 8.540044
+Bern, Switerland, Europe, 46.948221, 7.451165
+Washington D.C, USA, North America, 38.907879, -77.030347
+Boston, USA, North America, 42.360844, -71.057456
+Miami, USA, North America, 25.763523, -80.192878
+Atlanta, USA, North America, 33.753337, -84.389213
+Austin, USA, North America, 30.268205, -97.743138
+Houston, USA, North America, 29.755205, -95.368411
+Buenos Aires, Argentina, South America, -34.603148, -58.443337
+Santiago, Chile, South America, -33.449941, -70.661232
+Auckland, New Zealand, Oceania, -36.846085, 174.763348
+Brisbane, Australia, Oceania, -27.469746, 153.024967
+Sydney, Australia, Oceania, -33.840777, 151.090943
+Melbourne , Australia, Oceania, -37.814861, 144.963012
+Kuala Lumpur, Malaysia, Southeast Asia, 3.145242, 101.694034
+Taichung, Taiwan, Asia, 24.157185, 120.673722
+Kowloon, China, Asia, 22.322268, 114.176493
+Chiang Mai, Thailand, Southeast Asia, 18.786931, 98.982290
+Johannesburg, South Africa, Africa, -26.181912, 28.028270
+Campinas, Brazil, South America, -22.907858, -47.064429
+Belo Horizonte, Brazil, South America, -19.917104, -43.939920
+Sao Paulo, Brazil, South America, -23.556959, -46.638940
+
