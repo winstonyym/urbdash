@@ -25,13 +25,13 @@ with open("./data/urbanity_indicators.json", "r") as f:
 with open("./data/poly_columns.json", "r") as f:
     aggregated_indicators = json.load(f)
 
-with open("./data/GUN_small.json", "r") as f:
+with open("./data/GUN.json", "r") as f:
     links = json.load(f)
 
 datasets = {k.split('_')[0]:gpd.read_file(v) for k, v in links.items() if 'subzone' in k}
 
 # Get dataframe
-cities_df = pd.read_csv("./data/cities_small.csv")
+cities_df = pd.read_csv("./data/cities_location.csv")
 
 # ! CHANGE THIS TO INDICATOR LIST
 filters = []
@@ -103,8 +103,7 @@ selected_location_layout = html.Div(
                                         value="No. of Nodes",
                                         clearable=False)
                                 ], style = {'width':'50%', 'display':'inline-block'}),
-                        dcc.Loading(id = "scatter-load",  children = [], type='circle')
-                        
+                        dcc.Graph(id='scatter-graph', style = {'height':'73.5%'})
                     ],
                     className="plots_container_child",
                 ),
@@ -114,7 +113,7 @@ selected_location_layout = html.Div(
                         html.Div([
                             dcc.Dropdown(id = 'subzone-stats',
                                         options = aggregate_filters,
-                                        value="Building Footprint (Proportion)",
+                                        value="PopSum",
                                         clearable=False)
                                 ], style = {'width':'50%', 'display':'inline-block', 'padding-top':'0px'}),
                         html.Div(children = [], 
@@ -160,7 +159,7 @@ app.layout = html.Div(
     [
         dcc.Location(id="url", refresh=False),
         html.Div(
-            [   dcc.Store(id='datasets', data={name: df.to_json() for name, df in datasets.items()}, storage_type='session'),
+            [   dcc.Store(id='datasets', data={name: df.to_json() for name, df in datasets.items()}, storage_type='memory'),
                 html.Div(
                     id="width", style={"display": "none"}
                 ),  # Just to retrieve the width of the window
@@ -221,7 +220,7 @@ def toggle_applied_filters(n_clicks, state):
 selected_location = ""
 x_close_selection_clicks = 1
 
-@app.callback(Output("scatter-load", "children"),
+@app.callback(Output("scatter-graph", "figure"),
               [Input("map", "clickData"),
                Input("xaxis", "value"),
                Input("yaxis", "value")],
@@ -232,8 +231,7 @@ def update_scatter(clickData, xaxis_col, yaxis_col, attr_datasets):
         raise dash.exceptions.PreventUpdate
     elif selected_location != "":
         df = gpd.read_file(attr_datasets[selected_location])
-    return  dcc.Graph(id='scatter-graph', style = {'height':'73.5%'}, 
-            figure = {'data': [go.Scatter(x = df[xaxis_col], 
+    return  {'data': [go.Scatter(x = df[xaxis_col], 
                             y = df[yaxis_col], 
                             text = df['index'], 
                             mode = 'markers',
@@ -248,7 +246,7 @@ def update_scatter(clickData, xaxis_col, yaxis_col, attr_datasets):
                         paper_bgcolor='rgba(0,0,0,0)',
                         plot_bgcolor='rgba(0,0,0,0)',
                         hovermode = 'closest'
-        )})
+        )}
 
 
 @app.callback(Output('loading-2', 'children'),
@@ -319,6 +317,7 @@ def update_graph_location(clickData,
         lat = cities_df['Lat'][cities_df['City']==selected_location].values[0]
         lon = cities_df['Long'][cities_df['City']==selected_location].values[0]
         dataset = gpd.read_file(poly_datasets[selected_location])
+        max = dataset[dims_selected].max()
         dataset = dataset.reset_index()
         # subzone plot to benchmark cities
         view_state = pydeck.ViewState(latitude=lat, longitude=lon, zoom=10, max_zoom=16, pitch=40, bearing=0)
@@ -332,7 +331,7 @@ def update_graph_location(clickData,
             wireframe=True,
             pickable=True,
             auto_highlight=True,
-            get_fill_color=[230, 255, 255],
+            get_fill_color=[255, 255, 255],
             get_line_color=[0,0,0]
         )
 
