@@ -1,19 +1,24 @@
-FROM python:3.9
+# Use the official miniconda3 base image
+FROM continuumio/miniconda3
 
-COPY ./requirements.txt /requirements.txt
+# Set the working directory
+WORKDIR /app
 
-RUN apt-get update && apt-get upgrade -y
+# Copy the environment.yml file into the container
+COPY environment.yml .
 
-RUN pip3 install -r /requirements.txt
-RUN pip3 install gunicorn openpyxl
+# Create the Conda environment from the environment.yml file
+RUN conda env create -f environment.yml
 
-COPY ./app.py /code/
-RUN mkdir /code/assets
-COPY ./assets/ /code/assets
+# Activate the environment
+RUN echo "source activate $(head -1 environment.yml | cut -d' ' -f2)" > ~/.bashrc
+ENV PATH /opt/conda/envs/$(head -1 environment.yml | cut -d' ' -f2)/bin:$PATH
 
-WORKDIR /code/
-ENV PYTHONPATH /code
+# Copy your Dash application files into the container
+COPY . .
 
-ENV GUNICORN_CMD_ARGS "--bind=0.0.0.0:8000 --workers=2 --thread=4 --worker-class=gthread --forwarded-allow-ips='*' --access-logfile -"
+# Expose the port your Dash application will run on
+EXPOSE 8050
 
-CMD ["gunicorn", "app:server"]
+# Set the default command for the container, starting the Dash application
+CMD ["python", "app.py"]
