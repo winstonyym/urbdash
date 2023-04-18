@@ -1,4 +1,3 @@
-
 import dash
 from dash import dcc, html, callback
 import dash_deck 
@@ -126,7 +125,7 @@ selected_location_layout = html.Div(
         ),
         html.Div(
             [
-                html.H3("City Network", id = "city-label", style={'padding-left':'0%', 'margin-left':'1.5%', 'display':'inline-block'}),
+                html.H3("", id = "city-label", style={'padding-left':'0%', 'margin-left':'1.5%', 'display':'inline-block'}),
                 html.Div([dcc.RadioItems(['Grid', 'Network'], 'Grid', inline=True, id = 'grid-network')], style = {'font-size':'16px','display':'inline-block', 'float':'right', 'margin-right':'3%', 'margin-top':'1.5%'}),
                 dcc.Loading(
                             id="loading-2",
@@ -158,7 +157,8 @@ app.layout = html.Div(
     [
         dcc.Location(id="url", refresh=False),
         html.Div(
-            [   dcc.Store(id='datasets', data={name: df_link for name, df_link in datasets.items()}, storage_type='session'),
+            [   dcc.Store(id='datasets', data=datasets, storage_type='session'),
+                dcc.Store(id='chosen_dataset', data={}, storage_type='session'),
                 html.Div(
                     id="width", style={"display": "none"}
                 ),  # Just to retrieve the width of the window
@@ -220,33 +220,32 @@ selected_location = ""
 x_close_selection_clicks = 1
 
 @app.callback(Output("scatter-graph", "figure"),
-              [Input("map", "clickData"),
-               Input("xaxis", "value"),
-               Input("yaxis", "value")],
-               [State('datasets', 'data')])
-def update_scatter(clickData, xaxis_col, yaxis_col, attr_datasets):
-    global selected_location
-    if clickData is None:
-        raise dash.exceptions.PreventUpdate  
-    elif selected_location != "":
-        df = gpd.read_file(attr_datasets[selected_location])
-    return  {'data': [go.Scatter(x = df[xaxis_col], 
-                            y = df[yaxis_col], 
+              [Input("xaxis", "value"),
+               Input("yaxis", "value"),
+               Input('chosen_dataset', 'data')])
+def update_scatter_data(xaxis, yaxis, chosen_data):
+    # Datasets attributes
+    df = pd.json_normalize(data = chosen_data, record_path = 'features', record_prefix=None, sep='_')
+    selected = [col for col in list(df.columns) if 'properties' in col]
+    df = df[selected]
+    colnames = [col.split('_')[1] for col in list(df.columns)]
+    df.columns = colnames
+    return  {'data': [go.Scatter(x = df[xaxis], 
+                            y = df[yaxis], 
                             text = df['index'], 
                             mode = 'markers',
                             hoverinfo="text",
                             marker = {'size':7, 'opacity':1, 'color':'#FFFFFF',
                                     'line':{'width':1, 'color':'#60D9D9'}})],
                         'layout': go.Layout(
-                        title = f"{xaxis_col} against {yaxis_col}",
-                        xaxis = {'title': xaxis_col, 'zeroline':True, 'showgrid':False, 'linewidth':1, 'linecolor':'#fefae0'},
-                        yaxis = {'title': yaxis_col, 'zeroline':True, 'showgrid':False, 'linewidth':1, 'linecolor':'#fefae0'},
+                        title = f"{xaxis} against {yaxis}",
+                        xaxis = {'title': xaxis, 'zeroline':True, 'showgrid':False, 'linewidth':1, 'linecolor':'#fefae0'},
+                        yaxis = {'title': yaxis, 'zeroline':True, 'showgrid':False, 'linewidth':1, 'linecolor':'#fefae0'},
                         font_color = '#fefae0',
                         paper_bgcolor='rgba(0,0,0,0)',
                         plot_bgcolor='rgba(0,0,0,0)',
                         hovermode = 'closest'
         )}
-
 
 @app.callback(Output('loading-2', 'children'),
               [Input('map', 'clickData'),
@@ -257,18 +256,6 @@ def update_network_graph(clickData, grid_network):
         raise dash.exceptions.PreventUpdate  
     elif selected_location != "":
         return html.Iframe(id="network-graph", src = f"https://winstonyym.github.io/{selected_location}-{grid_network.lower()}/" , height="600px", width="100%")
-
-@app.callback(Output("city-label", "children"),
-              [Input("map", "clickData")])
-def update_network_name(clickData):
-    global selected_location
-    if clickData is None and selected_location == "":
-        raise dash.exceptions.PreventUpdate  
-    elif selected_location != "":
-        location = selected_location
-    elif clickData is not None:
-        location = clickData["points"][0]["text"]
-    return (f"{location.title()} City Network")
 
 
 @app.callback(
@@ -330,7 +317,7 @@ def update_graph_location(clickData,
             wireframe=True,
             pickable=True,
             auto_highlight=True,
-            get_fill_color=[255, 255, 255],
+            get_fill_color=[255,255,255],
             get_line_color=[0,0,0]
         )
 
@@ -349,6 +336,7 @@ def update_graph_location(clickData,
                     enableEvents=['dragRotate']
                 )
     )
+
 
 hovered_location = ""
 location = ""
@@ -483,6 +471,37 @@ def update_map(filter_list, width, height):
     fig.layout = all_plots_layout
 
     return fig, {"width": "100%", "height": "100%", "display":"block"}
+
+# Get data
+app.clientside_callback(
+    """
+    async function(datasets, selected) {
+    var value = datasets[selected];
+    const response = await fetch(value);
+    const data = await response.json();
+    return data;
+    }
+    """,
+    Output("chosen_dataset", "data"),
+    Input('datasets', 'data'),
+    Input("city-label", "children")
+)
+
+# Update clicked location
+app.clientside_callback(
+    """
+    function(clickedData) {
+        if (clickedData === null) {
+            return '';
+        } else {
+            const point = clickedData.points[0].text;
+            return `${point}`;
+        }
+    }
+    """,
+    Output("city-label", "children"),
+    Input('map', 'clickData')
+)
 
 # Get window size
 app.clientside_callback(
