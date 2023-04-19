@@ -6,7 +6,7 @@
 </br>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/winstonyym/urbanity/main/images/dashboard.png" width = 1000% alt="Logo">
+    <img src="https://raw.githubusercontent.com/winstonyym/urbdash/main/assets/dashboard.png" width = 1000% alt="Logo">
   <h5 align="center">Urbdash user interface.</h5>
 </p>
 
