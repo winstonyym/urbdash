@@ -1,6 +1,6 @@
 # Urbdash
 
-**Urbdash** is an interactive and web-based Python dash application designed to facilitate comparative analysis and benchmarking of global urban networks. The dashboard employs the Global Urban Network dataset, open Attribution 4.0 International (CC BY 4.0) license, hosted on Figshare: \href{https://doi.org/10.6084/m9.figshare.22124219.v5}{DOI}.
+**Urbdash** is an interactive and web-based Python dash application designed to facilitate comparative analysis and benchmarking of global urban networks. The dashboard employs the Global Urban Network dataset, open Attribution 4.0 International (CC BY 4.0) license, hosted on [Figshare](https://doi.org/10.6084/m9.figshare.22124219.v5).
 
 </br>
 </br>
