@@ -6,8 +6,8 @@
 </br>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/winstonyym/urbanity/main/images/citynetworks.png" width = 1000% alt="Logo">
-  <h5 align="center">Network of cities around the world</h5>
+    <img src="https://raw.githubusercontent.com/winstonyym/urbanity/main/images/dashboard.png" width = 1000% alt="Logo">
+  <h5 align="center">Urbdash user interface.</h5>
 </p>
 
 </br>
