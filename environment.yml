@@ -1,4 +1,4 @@
-name: urbdash
+name: urbdash-py
 channels:
   - conda-forge
   - defaults
