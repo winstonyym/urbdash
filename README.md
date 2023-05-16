@@ -1,13 +1,13 @@
-# Urbdash
+# Urbanity Dashboard
 
-**Urbdash** is an interactive and web-based Python dash application designed to facilitate comparative analysis and benchmarking of global urban networks. The dashboard employs the Global Urban Network dataset, open Attribution 4.0 International (CC BY 4.0) license, hosted on [Figshare](https://doi.org/10.6084/m9.figshare.22124219.v5).
+**Urbanity Dashboard** is an interactive and web-based Python dash application designed to facilitate comparative analysis and benchmarking of global urban networks. The dashboard employs the Urbanity global network dataset, open Attribution 4.0 International (CC BY 4.0) license, hosted on [Figshare](https://doi.org/10.6084/m9.figshare.22124219).
 
 </br>
 </br>
 
 <p align="center">
     <img src="https://github.com/winstonyym/urbdash/raw/main/assets/dashboard.png" width = 1000% alt="Logo">
-  <h5 align="center">Urbdash user interface.</h5>
+  <h5 align="center">Urbanity Dashboard user interface.</h5>
 </p>
 
 </br>
@@ -57,7 +57,7 @@ $ docker run -p 8050:8050 winstonyym/urbdash
 4) Done! You can now navigate to http://localhost:8050 in a web browser of your choice to view the dashboard.
 
 
-## What can I do with Urbdash?
+## What can I do with the Urbanity Dashboard?
 Users can use the dashboard to examine and compare urban networks through multiple scales---global, city, and local. At the global scale, users can access a variety of network indicators' distributions (such as building footprint proportions and green view index) across cities worldwide. 
 
 This functionality helps cities identify their strengths and weaknesses, offering guidance for improvement. Expanding on the global overview, the dashboard provides features to analyze and compare network structures at the city subzone level.  As an example of equitable planning, planners can pinpoint infrastructure gaps by evaluating population density and civic facility availability across different subzones.
@@ -66,4 +66,4 @@ Finally, users can delve into the local scale by directly accessing attributes o
 
 ## License
 
-`urbdash` was created by winstonyym. Source code is licensed under the terms of the MIT license.
+`Urbanity Dashboard` was created by winstonyym. Source code is licensed under the terms of the MIT license.
