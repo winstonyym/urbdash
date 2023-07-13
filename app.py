@@ -25,7 +25,7 @@ with open("./data/GUN.json", "r") as f:
 datasets = {k.split('_')[0]:v for k, v in links.items() if 'subzone' in k}
 
 # Get dataframe
-cities_df = pd.read_csv("./data/cities_location.csv")
+cities_df = pd.read_csv("./data/cities_full.csv")
 
 # ! CHANGE THIS TO INDICATOR LIST
 filters = []
@@ -230,6 +230,7 @@ def update_scatter_data(xaxis, yaxis, chosen_data):
     df = df[selected]
     colnames = [col.split('_')[1] for col in list(df.columns)]
     df.columns = colnames
+    df = df.fillna(0)
     return  {'data': [go.Scatter(x = df[xaxis], 
                             y = df[yaxis], 
                             text = df['index'], 
@@ -255,7 +256,7 @@ def update_network_graph(clickData, grid_network):
     if clickData is None and selected_location == "":
         raise dash.exceptions.PreventUpdate  
     elif selected_location != "":
-        return html.Iframe(id="network-graph", src = f"https://winstonyym.github.io/{selected_location}-{grid_network.lower()}/" , height="600px", width="100%")
+        return html.Iframe(id="network-graph", src = f"https://winstonyym.github.io/{selected_location.replace(' ', '')}-{grid_network.lower()}" , height="600px", width="100%")
 
 
 @app.callback(
@@ -307,6 +308,7 @@ def update_graph_location(clickData,
         dataset = dataset.reset_index()
         # subzone plot to benchmark cities
         view_state = pydeck.ViewState(latitude=lat, longitude=lon, zoom=10, max_zoom=16, pitch=40, bearing=0)
+        
         geojson = pydeck.Layer(
             "GeoJsonLayer",
             dataset,
@@ -327,7 +329,7 @@ def update_graph_location(clickData,
         )
         tooltip_str = f"<b>{'{'}{'index'}{'}'}:</b> {'{'}{dims_selected}{'}'}"
         return (dash_deck.DeckGL(
-                    json.loads(r.to_json()),
+                    data=json.loads(r.to_json()),
                     id="subzone-chart",
                     tooltip={'html': tooltip_str,
                              "style": {"backgroundColor": "white", "color": "black"}
