@@ -9,7 +9,7 @@ import pandas as pd
 from dash.dependencies import ClientsideFunction, Input, Output, State
 import json
 
-mapbox_token = "pk.eyJ1Ijoid2luc3Rvbnl5bSIsImEiOiJjbDZyb3UwanQwOXNrM2pxOWRvNTJ2YmRlIn0.i2i24ARrX48r-tK1tX-yrQ"
+mapbox_token = "pk.eyJ1Ijoid2luc3Rvbnl5bSIsImEiOiJjbG5ibW1hYzMwZzYzMmlqeXczYmJ5Z3ZnIn0.DW43aFufN91ybwUwqdyWgw"
 mapbox_style = "mapbox://styles/mapbox/dark-v11"
 
 # name mapper
@@ -448,7 +448,6 @@ def update_map(filter_list, width, height):
         )
     )
 
-    mapbox_token = "pk.eyJ1Ijoid2luc3Rvbnl5bSIsImEiOiJjbDZyb3UwanQwOXNrM2pxOWRvNTJ2YmRlIn0.i2i24ARrX48r-tK1tX-yrQ"
     all_plots_layout = dict(
         mapbox=dict(
             style=mapbox_style,
